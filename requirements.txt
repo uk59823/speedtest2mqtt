@@ -1,0 +1,4 @@
+paho-mqtt
+datetime
+urllib3
+speedtest-cli
