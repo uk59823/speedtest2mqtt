@@ -14,7 +14,7 @@ https://hub.docker.com/repository/docker/ukrae/speedtest2mqtt
 * MQTT_PORT: Port for your Broker (*default: 1883*)
 * MQTT_QOS: QOS-level for the message (*default: 2*)
 * MQTT_RETAIN: True/False for telling the MQTT-server to retain the message or discard it (*default: True*)
-* MQTT_TOPIC: MQTT topic for the JSON (*default: 'main/speedtest'*)
+* MQTT_TOPIC: MQTT topic for the JSON (*default: 'main_uk/speedtest'*)
 * MQTT_USER: Username for the broker (*leave empty for anonymous call*)
 * MQTT_PASSWORD: Password for the broker (*leave empty for anonymous call*)
 * MQTT_CLIENTID: ClientID for the broker to avoid parallel connections (*default: 'speed_mqtt'*)
