@@ -14,17 +14,21 @@ https://hub.docker.com/repository/docker/ukrae/speedtest2mqtt
 * MQTT_PORT: Port for your Broker (*default: 1883*)
 * MQTT_QOS: QOS-level for the message (*default: 2*)
 * MQTT_RETAIN: True/False for telling the MQTT-server to retain the message or discard it (*default: True*)
-* MQTT_TOPIC: MQTT topic for the JSON (*default: 'master/speedtest'*)
+* MQTT_TOPIC: MQTT topic for the JSON (*default: 'main/speedtest'*)
 * MQTT_USER: Username for the broker (*leave empty for anonymous call*)
 * MQTT_PASSWORD: Password for the broker (*leave empty for anonymous call*)
 * MQTT_CLIENTID: ClientID for the broker to avoid parallel connections (*default: 'speed_mqtt'*)
 
 ### other Settings
 * TEST_INTERVAL: Interval (in minutes) in which the speedtest is checked (*default: 30*)
+* TEST_COUNT: Count of speedtests, output is the average speed (*default: 1*)
+
+## Input
+* *MQTT_TOPIC*/start: Switch with state *ON/OFF* to start speedtest manually
 
 ## Output
-* master/speedtest/download
-* master/speedtest/upload
-* master/speedtest/ping
-* master/speedtest/update
-* master/speedtest/internet_response
+* *MQTT_TOPIC*/download
+* *MQTT_TOPIC*/upload
+* *MQTT_TOPIC*/ping
+* *MQTT_TOPIC*/update
+* *MQTT_TOPIC*/internet_response
