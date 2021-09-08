@@ -6,7 +6,8 @@ The script first check the internet availibility and then the internet speed at 
 
 # Environment
 The script is intended for use in a Docker container, so that the Docker environment variables are used to control the script
-https://hub.docker.com/repository/docker/ukrae/speedtest2mqtt
+
+The docker image you can find [here](https://hub.docker.com/r/ukrae/speedtest2mqtt "speedtest2mqtt on docker").
 
 ## docker environment variables
 ### MQTT-Settings 
